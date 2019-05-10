@@ -12,7 +12,16 @@ def index():
 @app.route(“/hello”,methods=["GET"])
 def hello():
     return "this is hello page!"
-
+@app.route("/",methods=["GET"])
+    def index
+username= request.args.get("username")
+@app.route("/user/<username>")
+def profile(username):
+    return '{}\'s profile'.format(username)
+@app.route('/post/<int:post_ids>')
+def post(post_ids):
+    return "POST %d' % post_ids
+           
 
 # This block is run if you execute this file locally, i.e. running 
 # `python3 app.py` from the command line. You can change the port if you want.
