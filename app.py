@@ -35,5 +35,4 @@ def index():
 # if you're curious: 
 # __name__ is a magic variable set by the python interpreter upon executing this file. 
 # more info: https://stackoverflow.com/a/419185
-if __name__ == "__main__":
-    app.run(port=5050)
+
