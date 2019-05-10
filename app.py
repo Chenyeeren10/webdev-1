@@ -9,18 +9,16 @@ app = Flask(__name__)
 @app.route("/", methods=["GET"])
 def index():
     return "Hello, world!"
-@app.route(“/hello”,methods=["GET"])
+@app.route('/hello',methods=["GET"])
 def hello():
     return "this is hello page!"
-@app.route("/",methods=["GET"])
-    def index
 username= request.args.get("username")
 @app.route("/user/<username>")
 def profile(username):
     return '{}\'s profile'.format(username)
 @app.route('/post/<int:post_ids>')
 def post(post_ids):
-    return "POST %d' % post_ids
+    return 'POST %d' % post_ids
 @app.route('/'):
 def index():
     return '''
